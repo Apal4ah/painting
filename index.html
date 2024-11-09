@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latihan javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="tools-board">
+            <div class="row">
+                <label for="" class="title">Shapes</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <span>Rectangle</span>
+                    </li>
+
+                    <li class="option tool" id="triangle">
+                        <span>Triangle</span>
+                    </li>
+
+                    <li class="option tool" id="circle">
+                        <span>Circle</span>
+                    </li>
+
+                    <li class="option">
+                        <input type="checkbox" name="fill-color" id="fill-color">
+                        <label for="fill-color">Fill color</label>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <label for="" class="title">Options</label>
+                <ul class="options">
+                    <li class="option active tool" id="brush">
+                        <span>Brush</span>
+                    </li>
+
+                    <li class="option tool" id="eraser">
+                        <span>Eraser</span>
+                    </li>
+
+                    <li class="option">
+                        <input type="range" name="" id="size-slider" min="1" max="30" value="5">
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <div class="title">
+                    <ul class="options">
+                        <li class="option"></li>
+                        <li class="option selected"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option">
+                            <input type="color" name="color" id="color-picker" value="#4a98f7">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row buttons">
+                    <button class="clear-canvas">Clear canvas</button>
+                    <button class="save-img">Save as image</button>
+                </div>
+            </div>
+        </section>
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+    </div>
+
+    <!-- javascript -->
+
+</body>
+
+</html>
